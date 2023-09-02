@@ -34,7 +34,7 @@
       <main>
         <div>
           <h4 data-aos="fade-up" data-aos-duration="1000">
-            Kepada Bapak/Ibu/Saudara/i,
+            Kepada <span>Bapak/Ibu/Saudara/i, </span>
           </h4>
           <h1 data-aos="fade-up" data-aos-duration="1500">Dedi & Nisa</h1>
           <p data-aos="fade-up" data-aos-duration="2000">
@@ -51,9 +51,6 @@
           <div data-aos="fade-up" data-aos-duration="3000">
             <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()"
               >Lihat Undangan
-              <audio autoplay>
-                <source src="Alhijratu.mp3" type="audio/ogg" />
-              </audio>
             </a>
           </div>
         </div>
@@ -195,6 +192,17 @@
               Alamat: WMGM+HPR, Tabata, Ketawang Laok, Kec. Guluk-Guluk,
               Kabupaten Sumenep, Jawa Timur 69463
             </p>
+            <iframe
+              data-aos="fade-up"
+              data-aos-duration="1400"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15839.991370019387!2d113.84799923381856!3d-7.009535490401346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd9e681188ea6e3%3A0x4027a76e3cdb720!2sSumenep%2C%20Dalem%20Anyar%2C%20Bangselok%2C%20Kec.%20Kota%20Sumenep%2C%20Kabupaten%20Sumenep%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1693630083417!5m2!1sid!2sid"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
             <a
               href="https://goo.gl/maps/3QwAWRCexWbm7r5m6"
               target="blank"
@@ -378,7 +386,7 @@
                 ></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h3>Adi Mengunjungi Rumah Rara Pertama Kali</h3>
+                    <h3>Dedi Mengunjungi Rumah Nisa Pertama Kali</h3>
                     <span>5 Desember 2019</span>
                   </div>
                   <div class="timeline-body">
@@ -514,6 +522,7 @@
         </div>
       </div>
     </section>
+
     <section id="rsvp" class="rsvp">
       <div class="container">
         <div
@@ -533,13 +542,13 @@
           action="https://script.google.com/macros/s/AKfycbzY4e7D_7ON7_MQDZby53Y_asEUuY88qdRWtp4ydjjdtqU6voxgR8Y3RWwkUz3ufxWWgQ/exec"
           id="my-for"
         >
-          <div class="col-12" data-aos="fade-up">
+          <div class="col-12" data-aos="fade-left" data-aos-duration="1000">
             <div class="mb-3">
               <label for="nama" class="form-label">Nama</label>
               <input type="text" class="form-control" name="nama" id="nama" />
             </div>
           </div>
-          <div class="col-12" data-aos="fade-up">
+          <div class="col-12" data-aos="fade-left" data-aos-duration="1000">
             <div class="mb-3">
               <label for="jumlah" class="form-label">Jumlah</label>
               <input
@@ -554,8 +563,8 @@
               />
             </div>
           </div>
-          <div class="col-12" data-aos="fade-up">
-            <div class="mb-3">
+          <div class="col-12">
+            <div class="mb-3" data-aos="fade-left" data-aos-duration="1000">
               <label for="status" class="form-label">Konfirmasi</label>
               <select name="status" id="status" class="form-select">
                 <option selected>Pilih salah satu</option>
@@ -564,12 +573,53 @@
               </select>
             </div>
           </div>
-          <div class="col-12" style="margin-top: 35px" data-aos="fade-up">
+          <div
+            class="col-12"
+            style="margin-top: 35px"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             <button class="btn btn-primary">Kirim</button>
           </div>
         </form>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6">
+            <div
+              id="disqus_thread"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            ></div>
+            <script>
+              /**
+               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+              (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                  s = d.createElement("script");
+                s.src = "https://dedi-nisa-wedding.disqus.com/embed.js";
+                s.setAttribute("data-timestamp", +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript
+              >Please enable JavaScript to view the
+              <a href="https://disqus.com/?ref_noscript"
+                >comments powered by Disqus.</a
+              ></noscript
+            >
+          </div>
+        </div>
       </div>
     </section>
+
     <section id="gifts" class="gifts">
       <div class="container">
         <div
@@ -581,8 +631,9 @@
             <span>Ungkapan Tanda Kasih</span>
             <h2>Kirim Hadiah</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-              ipsam possimus architecto.
+              Terima kasih atas doa dan restu yang telah anda berikan, jika anda
+              ingin mengirimkan kado nikah, silahkan kirim dengan cara dibawah
+              ini. Sebelumnya, kami mengucapkan banyak terima kasih.
             </p>
           </div>
         </div>
@@ -617,7 +668,7 @@
                 data-aos="zoom-in"
                 data-aos-duration="1500"
               >
-                <img src="mandiri-removebg-preview.png" alt="" width="170" />
+                <img src="mandiri1.png" alt="" width="170" />
                 <div class="fw-bold">MANDIRI</div>
                 327727 - KHOIRUL UMAM
               </li>
@@ -626,6 +677,7 @@
         </div>
       </div>
     </section>
+
     <footer>
       <div class="container">
         <div class="row">
@@ -643,6 +695,18 @@
         </div>
       </div>
     </footer>
+
+    <div class="audio-cuntainer">
+      <audio id="song" autoplay loop>
+        <source
+          src="Abay Motivasinger - Jodoh Dunia Akhirat _ lirik.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -685,6 +749,10 @@
 
     <script>
       const rootElement = document.querySelector(":root");
+      const audioIconswrapper = document.querySelector(".audio-icon-wrapper");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      const song = document.querySelector("#song");
+      let isPlaying = false;
 
       function disableScroll() {
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -699,12 +767,33 @@
       function enableScroll() {
         window.onscroll = function () {};
         rootElement.style.scrollBehavior = "smooth";
-        localStorage.setItem("opened", "true");
+        //localStorage.setItem("opened", "true");
+        playAudio();
+        isPlaying = true;
       }
-      if (!localStorage.getItem("opened")) {
-        disableScroll();
+
+      function playAudio() {
+        audioIconswrapper.style.display = "flex";
+        song.play();
       }
+      audioIconswrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
+        } else {
+          song.play();
+          audioIcon.classList.add("bi-disc");
+          audioIcon.classList.remove("bi-pause-circle");
+        }
+        isPlaying = !isPlaying;
+      };
+      //if (!localStorage.getItem("opened")) {
+      //  disableScroll();
+      //}
+      disableScroll();
     </script>
+
     <script>
       window.addEventListener("load", function () {
         const form = document.getElementById("my-form");
@@ -720,6 +809,15 @@
           });
         });
       });
+    </script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get("n") || "";
+      const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i,";
+      const namaContainer = document.querySelector(".hero h4 span");
+      namaContainer.innerText = pronoun + " " + nama;
+
+      document.querySelector("#nama").value = nama;
     </script>
   </body>
 </html>
